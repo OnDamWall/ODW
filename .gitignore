@@ -1,4 +1,4 @@
 # : comments
 
-# no /.ssh
-.ssh/
+# no /img
+img/
