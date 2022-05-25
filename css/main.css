@@ -99,6 +99,9 @@ a {
 .top-bar {
     margin-top:30px;
     position: fixed;
+    margin-left: 15%;/*왼쪽 마진설정 */
+    margin-right: 15%;
+    align
 }
 
 /* 탑바 - 메뉴 박스 1 시작 */
@@ -109,7 +112,7 @@ a {
 .top-bar > .menu-box-1 > ul > li:not(.logo-cell) > a {
     background-color:#484d50;
     padding:13px 0;
-    color:gold;
+    color:white;
     font-weight:bold;
     text-align:center;
 }
@@ -143,8 +146,9 @@ a {
     top:0;
     left:10px;
     width:calc(100% - 20px);
-    height:470px;
-    background-image:url(http://www.angelinus.com/ImagesNew/gnb/depth2FixedBg.jpg);
+    height:170px;
+    background-color: gray;
+    /*background-image:url(http://www.angelinus.com/ImagesNew/gnb/depth2FixedBg.jpg);*/
     background-repeat:no-repeat;
     background-position:center;
     transform:translateY(-100%);
