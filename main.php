@@ -5,7 +5,7 @@
 	<!--모바일 반응형 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet"  href="./css/main.css">
+	<link rel="stylesheet"  href="/ODW/css/main.css">
 </head>
 <body>
 	<header>

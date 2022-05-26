@@ -28,9 +28,11 @@ footer{
 			width: 100%; <!-- 좌우 사이즈조절-->
 			height: 123px;
 }
+
 #div0{
-height: 75px;
-background-color: white;
+    height: 75px;
+    background-color: white;
+    z-index: 100;
 
 }
 #div1{
@@ -48,6 +50,30 @@ background-color: white;
     margin-top: 0px;
     z-index: -1;
 }
+#div3{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    background-color: black;
+    padding: 40px;
+    z-index: -1;
+
+    margin-top: 100px;
+    margin-left: max( 340px, 50%);
+    transform: translateX(-50%);
+}
+#div4{
+    position: inherit;
+    width: 560px;
+    height: 560px;
+    background-color: white;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+}
+
 footer{
 
 }
@@ -115,9 +141,8 @@ a {
 .top-bar {
     margin-top:30px;
     position: fixed;
-    margin-left: 15%;/*왼쪽 마진설정 */
-    margin-right: 15%;
-    align
+    margin-left: max(1116px / 2, 50%);
+    transform: translateX(-50%);
 }
 
 /* 탑바 - 메뉴 박스 1 시작 */
@@ -180,8 +205,8 @@ a {
     height:0;
     border-top:10px solid #484d50;
     border-left:10px solid transparent;
-    z-index:-1;
-    position:absolute;
+    position:fixed;
+    z-index: 100;
 }
 
 .top-bar > .sub-menu-bg > div > div::after {
@@ -208,6 +233,7 @@ a {
 }
 
 .top-bar > .menu-box-1 > ul > li > div {
+    position: relative;
     z-index:1;
 }
 
