@@ -1,14 +1,17 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<!--모바일 반응형 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>온담월 홈페이지</title>
-	<link rel="stylesheet"  href="./css/main.css">
-	
+	<link rel="stylesheet" href="./css/slider2.css">
+    <link rel="stylesheet"  href="./css/main.css">
+	<title>가게 사진 구경하기</title>
+	<style>
+		
+            
+        #div1 { text-align: center; }/*화면 가운데로 메인로고 정렬*/
 
+	</style>
 </head>
 <body>
     <body>
@@ -35,9 +38,9 @@
                     <div>
                         <ul>
                             <!--  -->
-                            <li><a class="block" href="./event/event1.html">진행중인 이벤트</a></li>
-                            <li><a class="block" href="./event/event2.html">종료된 이벤트</a></li>
-                            <li><a class="block" href="./event/event3.html">당첨자 발표</a></li>
+                            <li><a class="block" href="event1.html">진행중인 이벤트</a></li>
+                            <li><a class="block" href="event2.html">종료된 이벤트</a></li>
+                            <li><a class="block" href="event3.html">당첨자 발표</a></li>
                             <!--가짜로만들기-->
                             
                         </ul>
@@ -49,9 +52,9 @@
                 <div class="relative">
                     <div>
                         <ul>
-                            <li><a class="block" href="./intro/intro.html">가게소개</a></li>
-                            <li><a class="block" href="./intro/intro2.html">영업 정보</a></li>
-                            <li><a class="block" href="./intro/intro3.html">안내 및 혜택</a></li>
+                            <li><a class="block" href="intro.html">가게소개</a></li>
+                            <li><a class="block" href="intro2.html">영업 정보</a></li>
+                            <li><a class="block" href="intro3.html">안내 및 혜택</a></li>
                             
                         </ul>
                     </div>
@@ -66,8 +69,8 @@
                         <ul>
                             <li><a class="block" href="https://instagram.com/cafe_ondamwol?igshid=YmMyMTA2M2Y=">인스타(로그인필요)</a></li>
                             <li><a class="block" href="https://baemin.me/BXy3Kt64-4">배달의 민족(앱설치필수)</a></li>
-                            <li><a class="block" href="./reply/reply.html">고객의 후기</a></li>
-                            <li><a class="block" href="./reply/shopview.html">가게 사진</a></li>
+                            <li><a class="block" href="reply.html">고객의 후기</a></li>
+                            <li><a class="block" href="shopview.html">가게 사진</a></li>
                         </ul>
                     </div>
                 </div>
@@ -106,27 +109,30 @@
             <div></div>
         </div>
     </div>
-</div>
-<div id="div0"></div>
-<!--빨간줄-->
-		
-	</header>
-    <section>
-        <br>
-        ddd<br>
-    </section>
+<br>
+<div class="slider">
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+    <input type="radio" name="slide" id="slide5">
+    <input type="radio" name="slide" id="slide6">
+    <ul id="imgholder" class="imgs">
+        <li><img src="./ODW-Private/event/hugi_01.jpg" width="640"></li>
+        <li><img src="./ODW-Private/event/hugi_02.jpg" width="640"></li>
+        <li><img src="./ODW-Private/event/hugi_03.jpg" width="640"></li>
+        <li><img src="./ODW-Private/event/hugi_04.jpg" width="640"></li>
+        <li><img src="./ODW-Private/event/hugi_05.jpg" width="640"></li>
+        <li><img src="./ODW-Private/event/hugi_06.jpg" width="640"></li>
 
-	<footer>
-		<div style="float: left;">
-            <a href="">온담월소개</a> | <a href="">고객의 소리</a> | <a href="https://instagram.com/cafe_ondamwol?igshid=YmMyMTA2M2Y=">인스타</a><br>
-            주소 대전 대덕구 한남로 70 59동 1층 창업마켓<br>
-            Copyright ⓒ2022. ONDARMWOL COM ALL RIGHTS RESERVED.
-
-        </div>
-        <div style="float: right;">
-            <a href="main.html"><img src="./ODW-Private/logo/logo-02.jpg" width="150"></a>
-        </div>
-	</footer>
-
+    </ul>
+    <div class="bullets">
+        <label for="slide1">&nbsp;</label>
+        <label for="slide2">&nbsp;</label>
+        <label for="slide3">&nbsp;</label>
+        <label for="slide4">&nbsp;</label>
+        <label for="slide5">&nbsp;</label>
+        <label for="slide6">&nbsp;</label>
+    </div>
 </body>
 </html>

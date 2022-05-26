@@ -4,8 +4,10 @@
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    -webkit-animation: 20s slidy ease-in-out infinite;
-  animation: 20s slidy ease-in-out infinite;
+    border: solid 40px;
+    margin-top: 150px;
+            
+   
 }
 .slider input[type=radio]{
     display: none;
@@ -52,6 +54,12 @@ ul.imgs li{
 .slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
     background-color: #fff;
 }
+.slider input[type=radio]:nth-child(5):checked~.bullets>label:nth-child(5){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(6):checked~.bullets>label:nth-child(6){
+    background-color: #fff;
+}
 
 .slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
     left: 0;
@@ -69,6 +77,16 @@ ul.imgs li{
     z-index:1;
 }
 .slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(5):checked~ul.imgs>li:nth-child(5){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(6):checked~ul.imgs>li:nth-child(6){
     left: 0;
     transition: 0.5s;
     z-index:1;
