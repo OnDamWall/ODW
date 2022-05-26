@@ -1,18 +1,4 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<!--모바일 반응형 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet"  href="./css/main.css">
-	
-
-</head>
-<body>
-	<header>
-		<div class="top-bar con">
+<div class="top-bar con">
     <nav class="menu-box-1">
         <ul class="row">
             <li class="cell">
@@ -107,17 +93,3 @@
     </div>
 </div>
 <div id="div0"></div>
-<!--빨간줄-->
-		
-	</header>
-    <section>
-        <br>
-        ddd<br>
-    </section>
-
-	<footer>
-		
-	</footer>
-
-</body>
-</html>
