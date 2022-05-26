@@ -6,10 +6,10 @@
                 <div class="relative"><!-- 서브메뉴를 위한 유령의 집 -->
                     <div><!-- overflow:hidden; 때문에 존재한다. -->
                         <ul>
-                            <li><a class="block" href="#">신메뉴</a></li>
-                            <li><a class="block" href="#">시그니처 메뉴</a></li>
-                            <li><a class="block" href="#">커피 & 음료</a></li>
-                            <li><a class="block" href="#">쿠키 & 빵</a></li>
+                            <li><a class="block" href="./menu/new_menu.php">신메뉴</a></li>
+                            <li><a class="block" href="./menu/signature.php">시그니처 메뉴</a></li>
+                            <li><a class="block" href="./menu/coffie_and_drick.php">커피 & 음료</a></li>
+                            <li><a class="block" href="./menu/cookie_and_bread.php">쿠키 & 빵</a></li>
                         </ul>
                     </div>
                 </div>
