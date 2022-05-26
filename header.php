@@ -1,19 +1,4 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<!--모바일 반응형 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>온담월 홈페이지</title>
-	<link rel="stylesheet"  href="./css/main.css">
-	
-
-</head>
-<body>
-    <body>
-    <header>
-        <div class="top-bar con">
+<div class="top-bar con">
     <nav class="menu-box-1">
         <ul class="row">
             <li class="cell">
@@ -21,10 +6,10 @@
                 <div class="relative"><!-- 서브메뉴를 위한 유령의 집 -->
                     <div><!-- overflow:hidden; 때문에 존재한다. -->
                         <ul>
-                            <li><a class="block" href="#">신메뉴</a></li>
-                            <li><a class="block" href="#">시그니처 메뉴</a></li>
-                            <li><a class="block" href="#">커피 & 음료</a></li>
-                            <li><a class="block" href="#">쿠키 & 빵</a></li>
+                            <li><a class="block" href="./menu/new_menu.php">신메뉴</a></li>
+                            <li><a class="block" href="./menu/signature.php">시그니처 메뉴</a></li>
+                            <li><a class="block" href="./menu/coffie_and_drick.php">커피 & 음료</a></li>
+                            <li><a class="block" href="./menu/cookie_and_bread.php">쿠키 & 빵</a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,9 +20,9 @@
                     <div>
                         <ul>
                             <!--  -->
-                            <li><a class="block" href="./event/event1.html">진행중인 이벤트</a></li>
-                            <li><a class="block" href="./event/event2.html">종료된 이벤트</a></li>
-                            <li><a class="block" href="./event/event3.html">당첨자 발표</a></li>
+                            <li><a class="block" href="#">진행중인 이벤트</a></li>
+                            <li><a class="block" href="#">종료된 이벤트</a></li>
+                            <li><a class="block" href="#">당첨자 발표</a></li>
                             <!--가짜로만들기-->
                             
                         </ul>
@@ -49,16 +34,16 @@
                 <div class="relative">
                     <div>
                         <ul>
-                            <li><a class="block" href="./intro/intro.html">가게소개</a></li>
-                            <li><a class="block" href="./intro/intro2.html">영업 정보</a></li>
-                            <li><a class="block" href="./intro/intro3.html">안내 및 혜택</a></li>
+                            <li><a class="block" href="#">가게소개</a></li>
+                            <li><a class="block" href="#">영업 정보</a></li>
+                            <li><a class="block" href="#">안내 및 혜택</a></li>
                             
                         </ul>
                     </div>
                 </div>
             </li>
             
-            <li class="cell logo-cell"><a href="main.html" class="block img-box"><img src="./ODW-Private/logo/logo-04.jpg" width="219"></a></li>
+            <li class="cell logo-cell"><a href="#" class="block img-box"><img src="./ODW-Private/logo/logo-04.jpg" width="219"></a></li>
             <li class="cell">
                 <a href="#" class="block">가게 후기</a>
                 <div class="relative">
@@ -66,8 +51,8 @@
                         <ul>
                             <li><a class="block" href="https://instagram.com/cafe_ondamwol?igshid=YmMyMTA2M2Y=">인스타(로그인필요)</a></li>
                             <li><a class="block" href="https://baemin.me/BXy3Kt64-4">배달의 민족(앱설치필수)</a></li>
-                            <li><a class="block" href="./reply/reply.html">고객의 후기</a></li>
-                            <li><a class="block" href="./reply/shopview.html">가게 사진</a></li>
+                            <li><a class="block" href="#">고객의 후기(직접연결이 안된다?지움?)</a></li>
+                            <li><a class="block" href="shopview.html">가게 사진</a></li>
                         </ul>
                     </div>
                 </div>
@@ -108,25 +93,3 @@
     </div>
 </div>
 <div id="div0"></div>
-<!--빨간줄-->
-		
-	</header>
-    <section>
-        <br>
-        ddd<br>
-    </section>
-
-	<footer>
-		<div style="float: left;">
-            <a href="">온담월소개</a> | <a href="">고객의 소리</a> | <a href="https://instagram.com/cafe_ondamwol?igshid=YmMyMTA2M2Y=">인스타</a><br>
-            주소 대전 대덕구 한남로 70 59동 1층 창업마켓<br>
-            Copyright ⓒ2022. ONDARMWOL COM ALL RIGHTS RESERVED.
-
-        </div>
-        <div style="float: right;">
-            <a href="main.html"><img src="./ODW-Private/logo/logo-02.jpg" width="150"></a>
-        </div>
-	</footer>
-
-</body>
-</html>
