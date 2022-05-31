@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/ODW/css/slider2.css">
     <link rel="stylesheet"  href="/ODW/css/main.css">
-	<title>가게 사진 구경하기</title>
+	<title>온담월</title>
 	<style> 
         #div1 { text-align: center; }/*화면 가운데로 메인로고 정렬*/
 	</style>

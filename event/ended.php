@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
     <link rel="stylesheet"  href="/ODW/css/main.css">
-	<title>진행중인 이벤트</title>
+	<title>온담월</title>
 </head>
 <body>
     <body>

@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-    <link rel="stylesheet"  href="/ODW/css/main.css">
-	<title>가게 소개</title>
+    <link rel="stylesheet"  href="/ODW/css/main.css?after">
+	<title>온담월</title>
 </head>
 <body>
     <body>
@@ -35,5 +35,7 @@
                 매장에 방문해 주시면 하울이가 귀엽게 맞이해드릴거에요<br>
         </div>
     </div>
+    <footer>
+    </footer>
 </body>
 </html>
