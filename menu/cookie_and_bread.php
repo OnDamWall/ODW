@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<!--모바일 반응형 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>온담월</title>
+	<?php include($_SERVER['DOCUMENT_ROOT']."/ODW/icon.php"); ?>
 	<link rel="stylesheet"  href="/ODW/css/main.css?after">
+	<title>온담월</title>
 </head>
 <body>
 	<header>
@@ -43,11 +44,7 @@
 				<img src="/ODW/ODW-Private/menus/cookie-walnut_scon.jpg" alt="04" class="drink-menu-img"/>
 			</div>
 		</div>
+		<footer></footer>
     </section>
-
-	<footer>
-		
-	</footer>
-
 </body>
 </html>

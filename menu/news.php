@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<!--모바일 반응형 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/ODW/css/main.css?after">
+	<?php include($_SERVER['DOCUMENT_ROOT']."/ODW/icon.php"); ?>
+	<link rel="stylesheet"  href="/ODW/css/main.css?after">
 	<title>온담월</title>
 </head>
 <body>
@@ -28,11 +29,7 @@
 				<img src="/ODW/ODW-Private/season_menus/tomato_vajil_ade-04.png" alt="04" class="new-menu-img"/>
 			</div>
 		</div>
+		<footer></footer>
     </section>
-
-	<footer>
-		
-	</footer>
-
 </body>
 </html>

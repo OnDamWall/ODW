@@ -48,10 +48,10 @@
                     <div class="relative">
                         <div>
                             <ul>
-                            <li><a class="block" href="https://instagram.com/cafe_ondamwol?igshid=YmMyMTA2M2Y=" target="_blank">인스타(로그인필요)</a></li>
-                                <li><a class="block" href="https://baemin.me/BXy3Kt64-4" target="_blank">배달의 민족(앱설치필수)</a></li>
                                 <li><a class="block" href="/ODW/reply/reply.php">고객의 후기</a></li>
                                 <li><a class="block" href="/ODW/reply/shopview.php">가게 사진</a></li>
+                                <li><a class="block" href="https://instagram.com/cafe_ondamwol?igshid=YmMyMTA2M2Y=" target="_blank">인스타 (로그인)</a></li>
+                                <li><a class="block" href="https://baemin.me/BXy3Kt64-4" target="_blank">배달의 민족 (앱)</a></li>
                             </ul>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                         <div>
                             <ul>
                                 <li><a class="block" href="http://pf.kakao.com/_whexfs" target="_blank">교내 배달</a></li>
-                                <li><a class="block" href="https://baemin.me/BXy3Kt64-4" target="_blank">교외 배달(앱으로 연걸)</a></li>
+                                <li><a class="block" href="https://baemin.me/BXy3Kt64-4" target="_blank">교외 배달 (배민)</a></li>
                                 <li><a class="block" href="https://pf.kakao.com/_whexfs/91317389" target="_blank">케이터링 서비스</a></li>
                                 
                             </ul>

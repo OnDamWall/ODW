@@ -1,21 +1,15 @@
 @charset "utf-8";
 
-section{
-    width: 1116px;
-    margin-left: 15%;
-    height: 2000px;
-}
-
 footer{
-    display: block;
-    bottom: 0px;
+    position: absolute;
+    bottom: 0;
     width: 996px;
     padding-left: 50px;
     padding-bottom: 20px;
     padding-top: 20px;
     padding-right: 50px;
 
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: max( 996px / 2, 50%);
     transform: translateX(-50%);
     background-color: black;
@@ -285,6 +279,7 @@ a {
     margin-top: 80px;
     margin-left: 50%;
     transform: translateX(-50%);
+    padding-bottom: 70px;
     z-index: 1;
 }
 

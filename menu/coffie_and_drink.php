@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<!--모바일 반응형 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>온담월</title>
+	<?php include($_SERVER['DOCUMENT_ROOT']."/ODW/icon.php"); ?>
 	<link rel="stylesheet"  href="/ODW/css/main.css?after">
+	<title>온담월</title>
 </head>
 <body>
 	<header>
@@ -13,7 +14,7 @@
 	</header>
 
     <section id="menu-section">
-	<div style="text-align: center;">
+		<div style="text-align: center;">
 			<img src="/ODW/ODW-Private/menus/drink-strawberry_earl_grey_bottle-01.jpg" alt="01" class="menu-main-img"/>
 		</div>
 		<h1>이것이 바로오♡ 스트로붸리~☆<br>이거 먹고 빙글빙글~~~</h1>
@@ -136,11 +137,7 @@
 				<img src="/ODW/ODW-Private/menus/drink-vanilla_latte.jpg" alt="04" class="drink-menu-img"/>
 			</div>
 		</div>
+		<footer></footer>
     </section>
-
-	<footer>
-		
-	</footer>
-
 </body>
 </html>
