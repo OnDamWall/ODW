@@ -32,21 +32,23 @@
             <input type="radio" name="slide" id="slide4">
             <input type="radio" name="slide" id="slide5">
             <input type="radio" name="slide" id="slide6">
+
             <ul id="imgholder" class="imgs">
-             <li><img src="/ODW/ODW-Private/event/hugi_01.jpg" width="70%"></li>
-             <li><img src="/ODW/ODW-Private/event/hugi_02.jpg" width="70%"></li>
-             <li><img src="/ODW/ODW-Private/event/hugi_03.jpg" width="70%"></li>
-             <li><img src="/ODW/ODW-Private/event/hugi_04.jpg" width="70%"></li>
-             <li><img src="/ODW/ODW-Private/event/hugi_05.jpg" width="70%"></li>
-              <li><img src="/ODW/ODW-Private/event/hugi_06.jpg" width="70%"></li>
+                <li><img src="/ODW/ODW-Private/event/hugi_01.jpg" width="70%"></li>
+                <li><img src="/ODW/ODW-Private/event/hugi_02.jpg" width="70%"></li>
+                <li><img src="/ODW/ODW-Private/event/hugi_03.jpg" width="70%"></li>
+                <li><img src="/ODW/ODW-Private/event/hugi_04.jpg" width="70%"></li>
+                <li><img src="/ODW/ODW-Private/event/hugi_05.jpg" width="70%"></li>
+                <li><img src="/ODW/ODW-Private/event/hugi_06.jpg" width="70%"></li>
             </ul>
+
             <div class="bullets">
-             <label for="slide1">&nbsp;</label>
-             <label for="slide2">&nbsp;</label>
-              <label for="slide3">&nbsp;</label>
-              <label for="slide4">&nbsp;</label>
-              <label for="slide5">&nbsp;</label>
-              <label for="slide6">&nbsp;</label>
+                <label for="slide1">&nbsp;</label>
+                <label for="slide2">&nbsp;</label>
+                <label for="slide3">&nbsp;</label>
+                <label for="slide4">&nbsp;</label>
+                <label for="slide5">&nbsp;</label>
+                <label for="slide6">&nbsp;</label>
             </div>
         </div>
         <footer></footer>
