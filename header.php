@@ -1,4 +1,21 @@
+<?php
+    session_start();
+?>
 <div id="div0">
+<div class="navBarRight">
+        <div class="navBarLogin">
+            <?php if(!isset($_SESSION['userid'])){
+                 echo '<a href="member/login.php">로그인</a>';
+             } else {
+              echo $_SESSION['name'].'님 환영합니다.</div>';
+            echo '<a href="member/member_process.php?mode=logout">로그아웃</a> | 
+             <a href="member/update.php">정보수정</a>
+              </div>';
+               }
+            ?>  
+         </div>
+    </div>
+
     <div class="top-bar con">
         <nav class="menu-box-1">
             <ul class="row">

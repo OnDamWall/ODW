@@ -316,3 +316,174 @@ a {
     max-height: 250px;
     margin-top: 16px;
 }
+#navBarRight{
+        width: 30%;
+}
+
+#navBarLogin{
+    top: 10px;
+    left: 1200px;
+    position: fixed;
+    font-size: 20px;
+    text-align: right;
+    padding-top: 10px;
+    z-index: 11;
+    display: block;
+}
+
+#navBar{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 500;
+    background-color: rgb(46, 67, 97);
+}
+.navBarCon{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navBarleft{
+    display: flex;
+    padding-top: 10px;
+    font-size: 40px;
+    color: white;
+    width: 30%;
+}
+.navBarItem{
+    width: 40%;
+}
+.navBarItem ul{
+    display: block;
+    
+}
+.navBarItem li{
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+a:link, a:visited{
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    color:white
+}
+.navBarRight{
+    width: 30%;
+}
+.navBarLogin{
+    font-size: 20px;
+    text-align: right;
+    padding-top: 10px;
+} 
+.mainCon{
+    width: 80%;
+    height: 800px;
+    margin: auto;
+
+}
+.registerTitle{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+} 
+
+.registerTable{
+    width: 35%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.registerTable tr{
+    height: 40px;
+}
+
+.registerTable td{
+    padding-top: 7px;
+}
+.registerSubmit{
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.loginTitle{
+    position:relative;
+    width: 22%;
+    margin: auto;
+    top: 200px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.loginForm {
+    position:relative;
+    width: 22%;
+    margin: auto;
+    top: 2  0px;
+    font-size: 25px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.loginId{
+    position:relative;
+    top: 40px;
+    text-align: right;
+
+}
+.loginPw{
+    position:relative;
+    top: 20px;
+    text-align: right;
+}
+
+.loginButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+   
+}
+
+.registerAndFind{
+    width: 22%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registerAndFind a:link, .registerAndFind a:visited{
+    color: black;
+}
+
+.helloUser{
+    color: white;
+    width: 100%;
+}
+
+.outAndUpdate{
+    color: gray;
+    margin-top: 5px;
+    font-size: 16px;
+}
