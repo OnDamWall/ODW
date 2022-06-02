@@ -1,13 +1,12 @@
 .slider{
     width: 640px;
     height: 640px;
-    position: relative;
+    position: absolute;
     margin: 0 auto;
     overflow: hidden;
     border: solid 40px;
     margin-top: 150px;
-            
-   
+    padding-bottom: 100px;
 }
 .slider input[type=radio]{
     display: none;

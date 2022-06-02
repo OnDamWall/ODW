@@ -26,7 +26,7 @@
 					</div>");
 			}
 		?>
-        <div id="normal-menu-wrapper">
+        <div class="normal-menu-wrapper">
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/cookie-black_sesame_smore.jpg", "흑 세사미 스모어"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/cookie-choco_levain.jpg", "초코르뱅"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/cookie-matcha_smore.jpg", "말차 스모어"); ?>

@@ -27,8 +27,8 @@
 					</div>");
 			}
 		?>
-		<h2>커피</h2>
-        <div id="normal-menu-wrapper">
+		<div class="menu-category-title">커피</div>
+        <div class="normal-menu-wrapper">
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-americano.jpg", "아메리카노"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-hazelnut_americano.jpg", "헤이즐넛 아메리카노"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-cafe_latte.jpg", "카페라떼"); ?>
@@ -42,23 +42,23 @@
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-matcha_latte.jpg", "말차라떼"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-decafe_americano.jpg", "말차라떼"); ?>
         </div>
-		<h1>밀크 티</h1>
-		<div id="normal-menu-wrapper">
+		<div class="menu-category-title">밀크 티</div>
+		<div class="normal-menu-wrapper">
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-milkteas_bottle-01.jpg", "밀크티 보틀"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-milkteas_bottle-02.jpg", "밀크티 보틀2"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-earl_grey_milktea.jpg", "얼그레이 밀크티"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-golden_loyale_milktea.jpg", "골든 로얄 밀크티"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-strawberry_earl_grey_bottle-02.jpg", "딸기 얼그레이 보틀"); ?>
 		</div>
-		<h1>시그니처 티</h1>
-		<div id="normal-menu-wrapper">
+		<div class="menu-category-title">시그니처 티</div>
+		<div class="normal-menu-wrapper">
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-peach_blacktea.jpg", "복숭아 홍차"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-peach_earl_grey.jpg", "복숭아 얼그레이티"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-citron_earl_grey.jpg", "유자 얼그레이티"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-lemon_rooibos.jpg", "레몬 루이보스티"); ?>
         </div>
-		<h1>에이드</h1>
-		<div id="normal-menu-wrapper">
+		<div class="menu-category-title">에이드</div>
+		<div class="normal-menu-wrapper">
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-odw_ade.jpg", "온담월 에이드"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-peach_earl_grey.jpg", "토마토 바질 에이드"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-green_tangerine_ade.png", "청귤 에이드"); ?>
@@ -66,8 +66,8 @@
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-lemon_ade.jpg", "레몬 에이드"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-lime_mojito_ade.jpg", "라임 모히또 에이드"); ?>
         </div>
-		<h1>라떼</h1>
-		<div id="normal-menu-wrapper">
+		<div class="menu-category-title">라떼</div>
+		<div class="normal-menu-wrapper">
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-strawberry_latte.jpg", "생딸기라떼"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-greentea_latte.jpg", "녹차라떼"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-blacktea_latte.jpg", "홍차라떼"); ?>
@@ -75,8 +75,8 @@
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-mint_choco_latte.jpg", "민트초코라떼"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-sweet_potato_latte.png", "고구마라떼"); ?>
         </div>
-		<h1>허브 티</h1>
-		<div id="normal-menu-wrapper">
+		<div class="menu-category-title">허브 티</div>
+		<div class="normal-menu-wrapper">
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-chamomile.jpg", "캐모마일"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-pepper_mint.jpg", "페퍼민트"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-rooibos.jpg", "루이보스"); ?>
@@ -84,8 +84,8 @@
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-earl_grey.jpg", "얼그레이"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-lavender.jpg", "라벤더"); ?>
         </div>
-		<h1>티</h1>
-		<div id="normal-menu-wrapper">
+		<div class="menu-category-title">티</div>
+		<div class="normal-menu-wrapper">
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-rooibos.jpg", "유자차"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-hibiscus.jpg", "율무차"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-earl_grey.jpg", "레몬차"); ?>
