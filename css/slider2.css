@@ -1,7 +1,8 @@
 #slider-section {
     width: auto;
     height: auto;
-    min-height: 93vh;
+    min-height: calc(93vh - 20px);
+    padding-bottom: 20px;
 }
 
 #slider-section .sub-menu-bg {
