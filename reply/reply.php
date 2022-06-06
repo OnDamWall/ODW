@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/icon.php"); ?>
 	<link rel="stylesheet" href="/ODW/css/slider2.css?after">
-    <link rel="stylesheet"  href="/ODW/css/main.css?after">
+    <link rel="stylesheet" href="/ODW/css/main.css?after">
 	<title>온담월</title>
 	<style> 
         #div1 { text-align: center; }/*화면 가운데로 메인로고 정렬*/
@@ -16,7 +16,7 @@
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
 	</header>
     <!-- 유령의 집, 단순한 기준점, 높이 : 항상 0 -->
-    <section>
+    <section id="slider-section">
         <div class="sub-menu-bg relative">
             <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
             <div>
@@ -24,8 +24,7 @@
                 <div></div>
             </div>
         </div>
-        <br>
-        <div class="slider" style="text-align: center; height: 640px;">
+        <div class="slider">
             <input type="radio" name="slide" id="slide1" checked>
             <input type="radio" name="slide" id="slide2">
             <input type="radio" name="slide" id="slide3">
@@ -51,7 +50,7 @@
                 <label for="slide6">&nbsp;</label>
             </div>
         </div>
-        <footer></footer>
     </section>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/footer.php"); ?>
 </body>
 </html>

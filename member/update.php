@@ -13,16 +13,15 @@
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
 		
 	</header> 
-<?php
-    session_start();
-    require_once("../db/db.php");
-    
-    $sql = $db -> prepare("SELECT * FROM register WHERE userid=:userid");
-    $sql -> bindParam("userid",$_SESSION['userid']);
-    $sql -> execute();
-    $row = $sql -> fetch();
-?>
-
+    <?php
+        session_start();
+        require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
+        
+        $sql = $db -> prepare("SELECT * FROM register WHERE userid=:userid");
+        $sql -> bindParam("userid",$_SESSION['userid']);
+        $sql -> execute();
+        $row = $sql -> fetch();
+    ?>
     <section>
         <div class="mainCon">
             <div class="updateTitle">회원정보</div>
@@ -57,6 +56,6 @@
             </form>
         </div>
     </section>
-    <footer></footer>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/footer.php"); ?>
 </body>
 </html>
