@@ -233,7 +233,7 @@ a {
 }
 
 .top-bar:hover > .sub-menu-bg > div {
-    height:470px;
+    height:180px;
 }
 
 /* 탑바 - 서브메뉴 - 시작 */
@@ -261,11 +261,11 @@ a {
 }
 
 .top-bar:hover > .menu-box-1 > ul > li > div > div {
-    height:470px;
+    height: 170px;
 }
 
 .top-bar > .menu-box-1 > ul > li > div > div > ul {
-    height:470px;
+    height: 170px;
     transform:translateY(-100%);
     transition:transform 0.3s;
 }
