@@ -31,8 +31,8 @@
                 </div>
             </form>
             <div class="registerAndFind">
-            <a href="register.php">회원가입</a>&nbsp;|
-            <a href="findId.php">아이디/비밀번호 찾기</a>
+                <a href="register.php">회원가입</a>&nbsp;|
+                <a href="findId.php">아이디/비밀번호 찾기</a>
             </div>
         </div>
     </section>

@@ -25,7 +25,7 @@
             <img src="/ODW/ODW-Private/shop/interior-01.jpg" width="200">
             <img src="/ODW/ODW-Private/shop/interior-05.jpg" width="200"> 
             <img src="/ODW/ODW-Private/shop/interior-12.jpg" width="200">
-                <br>
+                <br><br>
                 한남대학교 내에 위치하고있는 작은카페 온담:월<br>
                 매 월. 온기르 담다의 온담월로 매달 어울리는 움료를<br> 
                 개발하고 서비스합니다<br>

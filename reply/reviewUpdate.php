@@ -11,7 +11,7 @@
     $sql -> execute();
     $review = $sql -> fetch();
 
-    if($review['userid'] != $_SESSION['userid']){
+    if(isset($_SESSION['userid']) ? ($review['userid'] != $_SESSION['userid']) : true){
         errMsg('수정 권한이 없습니다.');
     }
 
@@ -49,18 +49,19 @@
                 <input type="hidden" name="name" value="<?= $_SESSION['name'] ?>">
                 <p><input class="writeTypeText" type="text" name="title" size="50" value="<?= $review['title']?>" required></p>
                 <textarea class="writeTextarea" name="story" required><?= $review['story']?></textarea>
-                <?php if(!$review['image']){
-                    } else{ ?>
+                <?php 
+                    if(!$review['image']){
+                    } else { ?>
                         <?= $review['image']?><br>
                 <?php } ?>
                 <input type="file" name="image" value="<?=$review['image']?>">
                 <div class="writeBtn">
-                <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="button" value="취소" onclick="history.back(1)">
+                    <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="취소" onclick="history.back(1)">
                 </div>
             </form>
         </div>
     </section>
-    <footer></footer>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/footer.php"); ?>
 </body>
 </html>

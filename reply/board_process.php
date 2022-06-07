@@ -1,10 +1,12 @@
 <?php
-    require_once("../db/db.php");
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'].'/ODW/db/db.php');
 
-    switch($_GET['mode']){
+    switch($_GET['mode']) {
         case 'write':
-            if(!$_SESSION['userid']){
+            if (!isset($_SESSION['userid'])) {
                 errMsg("로그인 해주세요");
             }
 
@@ -15,7 +17,7 @@
             $story = $_POST['story'];
 
 
-             if($_FILES['image']['name']){
+            if($_FILES['image']['name']) {
                $imageFullName = strtolower($_FILES['image']['name']);
                $imageNameSlice = explode(".",$imageFullName);
                $imageName = $imageNameSlice[0];

@@ -576,9 +576,29 @@ a:hover, a:active{
     width: 70%;
     height: 200px;
     overflow: hidden;
-  }
-  .container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
+}
+
+.container img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.reviewTitle {
+    font-size: 3em;
+    margin-block-end: 1em;
+}
+
+.reviewWrapper {
+    width: auto;
+
+}
+
+.reviewTable {
+    margin: 0 auto;
+}
+
+.writeReview {
+    font-size: 1.4em;
+    margin-block-start: 1em;
+}

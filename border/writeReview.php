@@ -1,6 +1,8 @@
 <?php
-    require_once("/ODW/db/db.php");
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'].'/ODW/db/db.php');
     if(!$_SESSION['userid']){
         errMsg('로그인 후 작성할 수 있습니다.');
     }
@@ -26,8 +28,8 @@
                 <textarea class="writeTextarea" name="story" placeholder="본문을 입력해주세요"  required></textarea>
                 <input type="file" name="image">
                 <div class="writeBtn">
-                <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="button" value="취소" onclick="history.back(1)">
+                    <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="취소" onclick="history.back(1)">
                 </div>
             </form>
         </div>

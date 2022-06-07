@@ -1,6 +1,8 @@
 <?php
-    require_once("/ODW/db/db.php");
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'].'/ODW/db/db.php');
 
     $no = $_GET['no'];
 
@@ -19,8 +21,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ODW/css/default.css">
-    <link rel="stylesheet" href="/ODW/css/style.css?ver=21">
+    
+    <link rel="stylesheet" href="/ODW/css/main.css">
     <title>온담월</title>
 </head>
 <body>
@@ -34,14 +36,16 @@
                 <input type="hidden" name="name" value="<?= $_SESSION['name'] ?>">
                 <p><input class="writeTypeText" type="text" name="title" size="50" value="<?= $review['title']?>" required></p>
                 <textarea class="writeTextarea" name="story" required><?= $review['story']?></textarea>
-                <?php if(!$review['image']){
-                    } else{ ?>
-                        <?= $review['image']?><br>
+                <?php 
+                    if (!$review['image']) {
+                    } else{
+                ?>
+                <?= $review['image']?><br>
                 <?php } ?>
                 <input type="file" name="image" value="<?=$review['image']?>">
                 <div class="writeBtn">
-                <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="button" value="취소" onclick="history.back(1)">
+                    <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="취소" onclick="history.back(1)">
                 </div>
             </form>
         </div>

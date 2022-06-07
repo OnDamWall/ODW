@@ -1,8 +1,8 @@
 <?php
-   if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
 
     $no = $_GET['no'];
     $sql = $db -> prepare("SELECT * FROM review WHERE no=:no");
@@ -13,7 +13,6 @@ require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
 
     $time = DateTime::createFromFormat('Y-m-d H:i:s', $review['redate']);
     $time = date_format($time, 'Y-m-d');
-
 ?>
 
 <!DOCTYPE html>
@@ -40,9 +39,8 @@ require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
 	<header>
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
 	</header> 
-<body>
     <section id = "normal-section">
-    <div class="sub-menu-bg relative">
+        <div class="sub-menu-bg relative">
             <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
             <div>
                 <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
@@ -58,7 +56,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
             <div class="viewStory">
                 <?= $review['story']?>
                 <?php 
-                    if(!$review['image']){
+                    if (!$review['image']) {
 
                     } else{
                         echo "<br><img src='image/$review[image]'></img>";
@@ -67,17 +65,19 @@ require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
             </div>
             <div class="viewBtn">
                 <div><a href="reply.php">목록으로</a></div>
-                <?php if($review['userid'] != $_SESSION['userid']){
-                    } else{
+                <?php 
+                    if (isset($_SESSION['userid']) ? ($review['userid'] != $_SESSION['userid']) : true) {
+
+                    } else {
                 ?>
                 <div>
-                <a href="reviewUpdate.php?no=<?= $review['no']?>">수정</a>
-                <a href="board_process.php?mode=delete&no=<?= $review['no']?>" onclick="confirmDel('정말로 삭제하시겠습니까?')">삭제</a>
+                    <a href="reviewUpdate.php?no=<?= $review['no']?>">수정</a>
+                    <a href="board_process.php?mode=delete&no=<?= $review['no']?>" onclick="confirmDel('정말로 삭제하시겠습니까?')">삭제</a>
                 </div>
                 <?php } ?>
             </div>
         </div>
     </section>
-    <footer></footer>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/footer.php"); ?>
 </body>
 </html>

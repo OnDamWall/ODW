@@ -3,7 +3,7 @@
         session_start();
     }
     require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
-    if(!$_SESSION['userid']){
+    if(!isset($_SESSION['userid'])) {
         errMsg('로그인 후 작성할 수 있습니다.');
     }
     $sql = $db -> prepare("SELECT * FROM review order by no DESC");
@@ -23,7 +23,6 @@
 <body>
 	<header>
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
-		
 	</header> 
 
     <section id = "normal-section">
@@ -44,12 +43,12 @@
                 <textarea class="writeTextarea" name="story" placeholder="본문을 입력해주세요"  required></textarea>
                 <input type="file" name="image">
                 <div class="writeBtn">
-                <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="button" value="취소" onclick="history.back(1)">
+                    <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="취소" onclick="history.back(1)">
                 </div>
             </form>
         </div>
     </section>
-    <footer></footer>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/footer.php"); ?>
 </body>
 </html>

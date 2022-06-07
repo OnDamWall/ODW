@@ -1,6 +1,8 @@
 <?php
-    require_once("/ODW/db/db.php");
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'].'/ODW/db/db.php');
 
     $no = $_GET['no'];
     $sql = $db -> prepare("SELECT * FROM review WHERE no=:no");
