@@ -1,3 +1,21 @@
+<?php
+   if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
+
+    $no = $_GET['no'];
+    $sql = $db -> prepare("SELECT * FROM review WHERE no=:no");
+    $sql -> bindParam("no",$no);
+    $sql -> execute();
+    $review['userid'] = NULL;
+    $review = $sql -> fetch();
+
+    $time = DateTime::createFromFormat('Y-m-d H:i:s', $review['redate']);
+    $time = date_format($time, 'Y-m-d');
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,25 +39,7 @@
 <body>
 	<header>
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
-		
 	</header> 
-
-<?php
-   if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
-
-    $no = $_GET['no'];
-    $sql = $db -> prepare("SELECT * FROM review WHERE no=:no");
-    $sql -> bindParam("no",$no);
-    $sql -> execute();
-    $review = $sql -> fetch();
-
-    $time = DateTime::createFromFormat('Y-m-d H:i:s', $review['redate']);
-    $time = date_format($time, 'Y-m-d');
-
-?>
 <body>
     <section id = "normal-section">
     <div class="sub-menu-bg relative">
@@ -67,12 +67,14 @@ require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
             </div>
             <div class="viewBtn">
                 <div><a href="reply.php">목록으로</a></div>
-               
+                <?php if($review['userid'] != $_SESSION['userid']){
+                    } else{
+                ?>
                 <div>
                 <a href="reviewUpdate.php?no=<?= $review['no']?>">수정</a>
                 <a href="board_process.php?mode=delete&no=<?= $review['no']?>" onclick="confirmDel('정말로 삭제하시겠습니까?')">삭제</a>
                 </div>
-                <?php  ?>
+                <?php } ?>
             </div>
         </div>
     </section>

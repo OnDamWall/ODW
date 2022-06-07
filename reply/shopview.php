@@ -36,7 +36,7 @@
                 <li><img src="/ODW/ODW-Private/shop/interior-01.jpg" width="640"></li>
                 <li><img src="/ODW/ODW-Private/shop/interior-03.jpg" width="640"></li>
                 <li><img src="/ODW/ODW-Private/shop/interior-05.jpg" width="640"></li>
-                <li><img src="/ODW/ODW-Private/shop/interior-06.jpg" width="640"></li>
+                <li><img src="/ODW/ODW-Private/shop/interior-06.jpg" width="640" height="640"></li>
                 <li><img src="/ODW/ODW-Private/shop/interior-10.jpg" width="640"></li>
                 <li><img src="/ODW/ODW-Private/shop/outterior-01.jpg" width="640"></li>
             </ul>
