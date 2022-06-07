@@ -1,9 +1,14 @@
 <?php
-    require_once("../db/db.php");
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT']."/ODW/db/db.php");
     if(!$_SESSION['userid']){
         errMsg('로그인 후 작성할 수 있습니다.');
     }
+    $sql = $db -> prepare("SELECT * FROM review order by no DESC");
+    $sql -> execute();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,18 +25,15 @@
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
 		
 	</header> 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/style.css?ver=15">
-    <title>odw review</title>
-</head>
-<body>
 
-    <section>
+    <section id = "normal-section">
+        <div class="sub-menu-bg relative">
+            <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
+            <div>
+                <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
+                <div></div>
+            </div>
+        </div>
         <div class="mainCon">
             <div class="writeTitle">리뷰 쓰기</div>
             <form class="writeForm" action="board_process.php?mode=write" method="post" enctype= "multipart/form-data">

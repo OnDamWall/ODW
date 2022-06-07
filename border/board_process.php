@@ -44,7 +44,7 @@
             $sql -> bindParam("image",$newImage);
 
             $sql -> execute();
-            header("location:review.php");
+            header("location:reply.php");
         break;
 
         case 'update':
@@ -57,7 +57,7 @@
             $sql -> bindParam("story",$newStory);
             $sql -> bindParam("no",$no);
             $sql -> execute();
-            header("location:review.php");
+            header("location:reply.php");
         break;
 
         case 'delete':
@@ -67,7 +67,7 @@
             $sql -> bindParam("no",$no);
             $sql -> execute();
 
-            header("location:review.php");
+            header("location:reply.php");
         break;
     }
 ?>
