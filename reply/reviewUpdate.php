@@ -1,6 +1,8 @@
 <?php
-    require_once("../db/db.php");
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'].'/ODW/db/db.php');
 
     $no = $_GET['no'];
 
@@ -29,18 +31,15 @@
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
 		
 	</header> 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/style.css?ver=21">
-    <title>ODW TEST</title>
-</head>
-<body>
     
-    <section>
+    <section id = "normal-section">
+        <div class="sub-menu-bg relative">
+            <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
+            <div>
+                <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
+                <div></div>
+            </div>
+        </div>
         <div class="mainCon">
             <div class="writeTitle">리뷰 수정</div>
             <form class="writeForm" action="board_process.php?mode=update" method="post" enctype= "multipart/form-data">

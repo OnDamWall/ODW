@@ -1,5 +1,8 @@
 <?php
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'].'/ODW/db/db.php');
 ?>
 <div id="div0">
     <div class="navBarRight">
