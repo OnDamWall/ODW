@@ -39,7 +39,7 @@
 	<header>
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
 	</header> 
-    <section id = "normal-section">
+    <section id = "board-section">
         <div class="sub-menu-bg relative">
             <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
             <div>
@@ -49,19 +49,22 @@
         </div>
         <div class="mainCon">
             <div class="viewTitle"><?= $review['title'] ?></div>
-            <div class="viewInfo">
-                <div class="viewName"><?= $review['name']?></div>
-                <div class="viewTime"><?= $time?></div>
-            </div>
-            <div class="viewStory">
-                <?= $review['story']?>
-                <?php 
-                    if (!$review['image']) {
+            <div class="viewContentWrapper">
+                <div class="viewInfo">
+                    <div class="viewName">작성자 : <?= $review['name']?></div>
+                    <div class="viewTime">작성날 : <?= $time?></div>
+                </div>
+                <div class="viewStory">
+                    <?php 
+                        if (!$review['image']) {
 
-                    } else{
-                        echo "<br><img src='image/$review[image]'></img>";
-                    }
-                ?>
+                        } else{
+                            echo "<br><img src='image/$review[image]' class='viewImageContent'></img>";
+                        }
+                    ?>
+                    <br>
+                    <?= $review['story'] ?>
+                </div>
             </div>
             <div class="viewBtn">
                 <div><a href="reply.php">목록으로</a></div>

@@ -24,7 +24,7 @@
 		<div style="text-align: center;">
 			<img src="/ODW/ODW-Private/season_menus/tomato_vajil_ade-02.png" alt="01" class="menu-main-img"/>
 		</div>
-		<h1>광란의 신메뉴!!!<br>토메이도오 바지ㄹㄹㄹ~~</h1>
+		<h1>광란의 신메뉴!!!<br>토메이도오 바ㅈㅣㄹㄹㄹ~~</h1>
         <div id="menu-wrapper">
 			<div class="new-menu">
 				<img src="/ODW/ODW-Private/season_menus/tomato_vajil_ade-05.jpg" alt="03" class="new-menu-img"/>

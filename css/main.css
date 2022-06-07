@@ -1,16 +1,26 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Unilab';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205-2@1.0/Unilab.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 footer{
     position: relative;
-    background-color: black;
+    background-color: rgb(42, 42, 42);
     bottom: 0;
     color: white;
     width: 996px;
     height: 7vh;
+    min-height: 72px;
     border: 5px groove #484d50;
     border-radius: 3px;
     border-bottom: 0px;
     box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
 
     margin-left: 50%;
     transform: translateX(-50%);
@@ -51,7 +61,7 @@ footer{
 }
 
 /* 가게소개 섹션 */
-#picture-section, #normal-section {
+#picture-section, #normal-section, #board-section {
     width: auto;
     height: auto;
     text-align: center;
@@ -69,10 +79,18 @@ footer{
     height: 300px;
 }
 
+/* 여백용 */
+#board-section .sub-menu-bg {
+    height: 140px;
+}
+
 #picture-section .picture-contents {
     position: relative;
     border: 10px double #484d50;
     border-radius: 10px;
+    font-family: 'Unilab';
+    font-size: 22px;
+    font-weight: 600;
     margin: 0 auto;
     width: 590px;
     height: 590px;
@@ -130,8 +148,9 @@ a {
 }
 
 .img-box > img {
-    width:100%;
-    display:block;
+    width: 200px;
+    margin-top: -30px;
+    display: flex;
 }
 
 .relative {
@@ -372,20 +391,6 @@ a {
     margin-block-end: 0.83em;
 }
 
-.navBarRight {
-    display: inline-block;
-    padding-top: 10px;
-    width: 30vw;
-    margin-left: 45vw;
-}
-
-.navBarLogin {
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    z-index: 11;
-}
-
 
 #navBar{
     position: static;
@@ -437,16 +442,26 @@ a:link, a:visited{
 a:hover, a:active{
     color:white
 }
-.navBarRight{
-    width: 30%;
+
+.navBarRight {
+    width: 1116px;
+    display: flex;
+    justify-content: right;
+    margin-left: max(1116px / 2, 50%);
+    transform: translateX(-50%);
 }
-.navBarLogin{
+
+.navBarLogin {
     font-size: 20px;
     text-align: right;
+    white-space: nowrap;
     padding-top: 10px;
-} 
+    padding-bottom: 10px;
+    z-index: 11;
+}
+
 .mainCon{
-    width: 80vw;
+    width: 1100px;
     margin: auto;
     text-align: center;
     white-space: nowrap;
@@ -586,6 +601,7 @@ display: block;
 
 .reviewTitle {
     font-size: 3em;
+    font-weight: 600;
     margin-block-end: 1em;
 }
 
@@ -596,9 +612,55 @@ display: block;
 
 .reviewTable {
     margin: 0 auto;
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+
+.reviewTable td {
+    font-size: 1.5em;
 }
 
 .writeReview {
     font-size: 1.4em;
     margin-block-start: 1em;
+}
+
+
+#board-section .mainCon {
+    width: 1060px;
+}
+
+.viewTitle {
+    font-size: 3em;
+    font-weight: 700;
+    margin-block-end: 1em;
+    text-align: left;
+}
+
+.viewContentWrapper {
+    border: 8px double #484d50;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.viewImageContent {
+    width: 700px;
+    height: auto;
+}
+
+.viewInfo {
+    width: 50%;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.viewBtn {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-block-start: 2em;
+    margin-block-end: 4em;
+}
+
+.viewStory {
+    font-size: 1.2em;
 }

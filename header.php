@@ -11,7 +11,7 @@
                 if(!isset($_SESSION['userid'])){
                     echo '<a href="/ODW/member/login.php" class="loginText">로그인</a>';
                 } else {
-                    echo '<div class="welcomeText">'.$_SESSION['name'].'님 환영합니다.<br></div>';
+                    echo '<div class="welcomeText">'.$_SESSION['name'].'님 환영합니다<br></div>';
                     echo '<div><a href="/ODW/member/member_process.php?mode=logout">로그아웃</a> | 
                         <a href="/ODW/member/update.php">정보수정</a>
                         </div>';
@@ -63,7 +63,7 @@
                     </div>
                 </li>
                 
-                <li class="cell logo-cell"><a href="/ODW/main.php" class="block img-box"><img src="/ODW/ODW-Private/logo/logo-04.jpg" width="219"></a></li>
+                <li class="cell logo-cell"><a href="/ODW/main.php" class="block img-box"><img src="/ODW/ODW-Private/logo/logo-05.jpg"></a></li>
                 <li class="cell">
                     <a href="#" class="block">가게 후기</a>
                     <div class="relative">
