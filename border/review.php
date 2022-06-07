@@ -31,10 +31,10 @@
                 <div class="navBarRight">
                     <div class="navBarLogin">
                         <?php if(!isset($_SESSION['userid'])){
-                            echo '<a href="../member/login.php">로그인</a>';
+                            echo '<a href="http://ondamwol.kro.kr/ODW//member/login.php">로그인</a>';
                         } else {
                         echo '<div class="helloUser">'.$_SESSION['name'].'님 환영합니다.</div>';
-                        echo '<div class="outAndUpdate"><a href="../member/member_process.php?mode=logout">로그아웃</a> | 
+                        echo '<div class="outAndUpdate"><a href="http://ondamwol.kro.kr/ODW//member/member_process.php?mode=logout">로그아웃</a> | 
                         <a href="../member/update.php">정보수정</a>
                         </div>';
                         }

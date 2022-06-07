@@ -16,7 +16,7 @@
     <section id="menu-section">
 		<div style="text-align: center;">
 			<img src="/ODW/ODW-Private/menus/drink-strawberry_earl_grey_bottle-01.jpg" alt="01" class="menu-main-img"/>
-		</div>
+		</div>BLA
 		<h1>이것이 바로오♡ 스트로붸리~☆<br>이거 먹고 빙글빙글~~~</h1>
 
 		<?php
@@ -52,7 +52,7 @@
 		</div>
 		<h1>시그니처 티</h1>
 		<div id="normal-menu-wrapper">
-			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-peach_blacktea.jpg", "복숭아 홍차"); ?>
+			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-blacktea.jpg", "복숭아 홍차"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-peach_earl_grey.jpg", "복숭아 얼그레이티"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-citron_earl_grey.jpg", "유자 얼그레이티"); ?>
         	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-lemon_rooibos.jpg", "레몬 루이보스티"); ?>

@@ -31,8 +31,8 @@
                 </div>
                 <div class="navBarItem">
                     <ul>
-                        <a href="../main.php"><li>홈으로</li></a>
-                        <a href="../border/review.php"><li>리뷰 보기</li></a>
+                        <a href="http://ondamwol.kro.kr/ODW//main.php"><li>홈으로</li></a>
+                        <a href="http://ondamwol.kro.kr/ODW//border/review.php"><li>리뷰 보기</li></a>
                     </ul>
                 </div>
                 <div class="navBarRight">
