@@ -355,6 +355,8 @@ a {
     display: block;
     position: relative;
     text-align: center;
+    font-family: 'ImcreSoojin';
+    font-style: normal;
     font-size: 3em;
     font-weight: 700;
     margin-block-start: 3em;

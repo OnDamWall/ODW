@@ -23,7 +23,7 @@
         </div>
 		<div style="text-align: center;">
 			<img src="/ODW/ODW-Private/menus/drink-strawberry_earl_grey_bottle-01.jpg" alt="01" class="menu-main-img"/>
-		</div>BLA
+		</div>
 		<h1>이것이 바로오♡ 스트로붸리~☆<br>이거 먹고 빙글빙글~~~</h1>
 
 		<?php
@@ -57,17 +57,6 @@
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-golden_loyale_milktea.jpg", "골든 로얄 밀크티"); ?>
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-strawberry_earl_grey_bottle-02.jpg", "딸기 얼그레이 보틀"); ?>
 		</div>
-<<<<<<< HEAD
-		<h1>시그니처 티</h1>
-		<div id="normal-menu-wrapper">
-			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-blacktea.jpg", "복숭아 홍차"); ?>
-        	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-peach_earl_grey.jpg", "복숭아 얼그레이티"); ?>
-        	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-citron_earl_grey.jpg", "유자 얼그레이티"); ?>
-        	<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-lemon_rooibos.jpg", "레몬 루이보스티"); ?>
-        </div>
-		<h1>에이드</h1>
-		<div id="normal-menu-wrapper">
-=======
 		<div class="menu-category-title">시그니처 티</div>
 		<div class="normal-menu-wrapper">
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-peach_blacktea.jpg", "복숭아 홍차"); ?>
@@ -77,7 +66,6 @@
 		</div>
 		<div class="menu-category-title">에이드</div>
 		<div class="normal-menu-wrapper">
->>>>>>> 40ecbe192431fe3b20963f0e927ad3d73ca8066d
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-odw_ade.jpg", "온담월 에이드"); ?>
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-peach_earl_grey.jpg", "토마토 바질 에이드"); ?>
 			<?php PrintMenuContent("/ODW/ODW-Private/menus/drink-green_tangerine_ade.png", "청귤 에이드"); ?>

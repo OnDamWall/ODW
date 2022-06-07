@@ -22,22 +22,22 @@
             </div>
         </div>
 		<div style="text-align: center;">
-			<img src="/ODW/ODW-Private/season_menus/tomato_vajil_ade-02.png" alt="01" class="menu-main-img"/>
+			<img src="/ODW/ODW-Private/decorations/decoration-04.jpg" alt="01" class="menu-main-img"/>
 		</div>
-		<h1>광란의 신메뉴!!!<br>토메이도오ddd 바지ㄹㄹㄹ~~</h1>
+		<h1>온담월에 오신 것을 환영합니다!<br><br></h1>
         <div id="menu-wrapper">
 			<div class="new-menu">
-				<img src="/ODW/ODW-Private/season_menus/tomato_vajil_ade-05.jpg" alt="03" class="new-menu-img"/>
+				<img src="/ODW/ODW-Private/catering/catering-01.png" alt="03" class="new-menu-img"/>
 			</div>
 			<div class="new-menu">
-				<img src="/ODW/ODW-Private/season_menus/tomato_vajil_ade-01.jpg" alt="02" class="new-menu-img"/>
+				<img src="/ODW/ODW-Private/shop/interior-03.jpg" alt="02" class="new-menu-img"/>
 			</div>
 			<div class="new-menu">
-				<img src="/ODW/ODW-Private/season_menus/tomato_vajil_ade-04.png" alt="04" class="new-menu-img"/>
+				<img src="/ODW/ODW-Private/decorations/decoration-02.jpg" alt="04" class="new-menu-img"/>
 			</div>
 		
 		</div>
     </section>
-	<footer></footer>
+	<?php include($_SERVER['DOCUMENT_ROOT']."/ODW/footer.php"); ?>
 </body>
 </html>
