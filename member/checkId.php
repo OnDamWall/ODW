@@ -1,5 +1,5 @@
 <?php
-    require_once('../db/db.php');
+    require_once($_SERVER['DOCUMENT_ROOT'].'/ODW/db/db.php');
     $userid = $_GET['userid'];
 
     if(!$userid){

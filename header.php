@@ -2,17 +2,18 @@
     session_start();
 ?>
 <div id="div0">
-<div class="navBarRight">
+    <div class="navBarRight">
         <div class="navBarLogin">
-            <?php if(!isset($_SESSION['userid'])){
-                 echo '<a href="member/login.php">로그인</a>';
-             } else {
-              echo $_SESSION['name'].'님 환영합니다.</div>';
-            echo '<a href="member/member_process.php?mode=logout">로그아웃</a> | 
-             <a href="member/update.php">정보수정</a>
-              </div>';
-               }
-            ?>  
+            <?php 
+                if(!isset($_SESSION['userid'])){
+                    echo '<a href="/ODW/member/login.php" class="loginText">로그인</a>';
+                } else {
+                    echo '<div class="welcomeText">'.$_SESSION['name'].'님 환영합니다.<br></div>';
+                    echo '<div><a href="/ODW/member/member_process.php?mode=logout">로그아웃</a> | 
+                        <a href="/ODW/member/update.php">정보수정</a>
+                        </div>';
+                }
+            ?>
          </div>
     </div>
 

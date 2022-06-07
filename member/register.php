@@ -5,30 +5,21 @@
 	<!--모바일 반응형 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php include($_SERVER['DOCUMENT_ROOT']."/ODW/icon.php"); ?>
-	<link rel="stylesheet"  href="/ODW/css/main.css?after">
+	<link rel="stylesheet" href="/ODW/css/main.css?after">
 	<title>온담월</title>
 </head>
 <body>
 	<header>
         <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/header.php"); ?>
-		
-	</header>   
-<!DOCTYPE html>
-<html lang="kor">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/style.css?ver=4">
-    <script>
-        function checkId() {
-            window.open("checkId.php?userid=" + document.register.userid.value,"IDcheck","left=50, top=50, width=50, height=10, scrollbars=no, resizeable=no");
-        }
-    </script>
-    <title>ODW page</title>
-</head>
-
-    <section>
+	</header>
+    <section id="normal-section">
+        <div class="sub-menu-bg relative" style="height: 200px">
+            <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
+            <div>
+                <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
+                <div></div>
+            </div>
+        </div>
         <div class="mainCon">
             <div class="registerTitle">회원가입</div>
             <div class="registerBox">
@@ -76,8 +67,9 @@
                         <button onClick="history.back(-1)">취소</button>
                     </div>
                 </form>
-                </div>
             </div>
-        </section>
-
+        </div>
+    </section>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/footer.php"); ?>
+</body>
 </html>

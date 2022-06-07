@@ -1,5 +1,5 @@
 <?php
-    require_once("../db/db.php");
+    require_once("/ODW/db/db.php");
     session_start();
 
     $sql = $db -> prepare("SELECT * FROM review order by no DESC");
@@ -11,39 +11,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/style.css?ver=18">
-    <title>ODW TEST</title>
+    <link rel="stylesheet" href="/ODW/css/default.css">
+    <link rel="stylesheet" href="/ODW/css/style.css?ver=18">
+    <title>온담월</title>
 </head>
 <body>
-    <header>
-        <nav id="navBar">
-            <div class="navBarCon">
-                <div class="navBarleft">
-                    ODW TEST
-                </div>
-                <div class="navBarItem">
-                    <ul>
-                        <a href="../main.php"><li>홈으로</li></a>
-                        <a href="review.php"><li>리뷰 보기</li></a>
-                    </ul>
-                </div>
-                <div class="navBarRight">
-                    <div class="navBarLogin">
-                        <?php if(!isset($_SESSION['userid'])){
-                            echo '<a href="http://ondamwol.kro.kr/ODW//member/login.php">로그인</a>';
-                        } else {
-                        echo '<div class="helloUser">'.$_SESSION['name'].'님 환영합니다.</div>';
-                        echo '<div class="outAndUpdate"><a href="http://ondamwol.kro.kr/ODW//member/member_process.php?mode=logout">로그아웃</a> | 
-                        <a href="../member/update.php">정보수정</a>
-                        </div>';
-                        }
-                        ?>   
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
     <section>
         <div class="mainCon">
             <div class="reviewTitle">리뷰 보기</div>
@@ -83,7 +55,7 @@
             <div class="writeReview"><a href="writeReview.php">글쓰기</a></div>
         </div>
     </section>
-    <footer></footer>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/ODW/footer.php"); ?>
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 <?php
     $dns = "mysql:host=localhost;dbname=new;charset=utf8";
     $username="root";
-    $pw="123123";
+    $pw="1234";
 
     try {
         $db = new PDO($dns, $username, $pw);

@@ -1,16 +1,32 @@
-.slider{
+#slider-section {
+    width: auto;
+    height: auto;
+    min-height: calc(93vh - 20px);
+    padding-bottom: 20px;
+}
+
+#slider-section .sub-menu-bg {
+    height: 170px;
+}
+
+#slider-section .slider{
+    display: block;
     width: 640px;
     height: 640px;
     position: relative;
-    margin: 0 auto;
     overflow: hidden;
-    border: solid 40px;
-    margin-top: 150px;
-            
-   
+    border: 10px double #484d50;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    text-align: center;
 }
 .slider input[type=radio]{
     display: none;
+}
+
+#imgholder {
+    display: block;
 }
 
 ul.imgs{
@@ -33,6 +49,7 @@ ul.imgs li{
     bottom: 20px;
     z-index: 2;
 }
+
 .bullets label{
     display: inline-block;
     border-radius: 50%;

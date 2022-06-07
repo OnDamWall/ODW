@@ -1,6 +1,8 @@
 <?php
-    session_start();
-    require_once('../db/db.php');
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'].'/ODW/db/db.php');
 
     switch ($_GET['mode']){
         case 'register':
@@ -31,7 +33,7 @@
 
         $sql -> execute();
         
-        header('location:../main.php');
+        header('location:/ODW/main.php');
         break;
 
         case 'login':
@@ -55,12 +57,12 @@
 
             $_SESSION['userid'] = $row['userid'];
             $_SESSION['name'] = $row['name'];
-            header('location:../main.php');
+            header('location:/ODW/main.php');
         break;
 
         case 'logout':
             session_unset();
-            header('location:../main.php');
+            header('location:/ODW/main.php');
         break;
 
         case 'update':
@@ -91,7 +93,7 @@
 
             $sql -> execute();
             session_unset();
-            header('location:../main.php');
+            header('location:/ODW/main.php');
         break;
         
         case 'findId':
@@ -124,7 +126,7 @@
                     echo "
                         <script>
                         alert('고객님의 아이디는 ".$user['userid']."입니다.');
-                        location.href='../main.php';
+                        location.href='/ODW/main.php';
                         </script>
                     ";
                 }  
