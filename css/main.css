@@ -310,6 +310,10 @@ a {
 
 #menu-section h1 {
     text-align: center;
+    font-family: 'ImcreSoojin';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
 }
 
 #menu-section .wrapper {
@@ -348,7 +352,12 @@ a {
 }
 
 .menu-name {
+    display: block;
     text-align: center;
+    font-family: 'ImcreSoojin';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
 }
 
 .menu-category-title {
