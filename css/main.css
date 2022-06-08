@@ -622,9 +622,25 @@ display: block;
     font-size: 1.5em;
 }
 
+.writeTitle {
+    font-size: 3em;
+    font-weight: 700;
+    margin-block-end: 1em;
+}
+
+.writeForm {
+    border: 8px double #484d50;
+    border-radius: 8px;
+}
+
 .writeReview {
     font-size: 1.4em;
     margin-block-start: 1em;
+}
+
+.writeTextarea {
+    width: 600px;
+    height: 300px;
 }
 
 

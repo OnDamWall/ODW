@@ -75,7 +75,7 @@
                 ?>
                 <div>
                     <a href="reviewUpdate.php?no=<?= $review['no']?>">수정</a>
-                    <a href="board_process.php?mode=delete&no=<?= $review['no']?>" onclick="confirmDel('정말로 삭제하시겠습니까?')">삭제</a>
+                    <a href="#" onclick="confirmDel('정말로 삭제하시겠습니까?')">삭제</a>
                 </div>
                 <?php } ?>
             </div>

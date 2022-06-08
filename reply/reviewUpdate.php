@@ -40,7 +40,7 @@
                 <div></div>
             </div>
         </div>
-        <div class="mainCon">
+        <div class="mainCon" style="width: 700px; margin-top: -120px;">
             <div class="writeTitle">리뷰 수정</div>
             <form class="writeForm" action="board_process.php?mode=update" method="post" enctype= "multipart/form-data">
                 <input type="hidden" name="id" value="review">
@@ -49,16 +49,20 @@
                 <input type="hidden" name="name" value="<?= $_SESSION['name'] ?>">
                 <p><input class="writeTypeText" type="text" name="title" size="50" value="<?= $review['title']?>" required></p>
                 <textarea class="writeTextarea" name="story" required><?= $review['story']?></textarea>
+                <br>
                 <?php 
                     if(!$review['image']){
                     } else { ?>
                         <?= $review['image']?><br>
                 <?php } ?>
+                <br><br>
                 <input type="file" name="image" value="<?=$review['image']?>">
+                <br><br>
                 <div class="writeBtn">
                     <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="button" value="취소" onclick="history.back(1)">
                 </div>
+                <br>
             </form>
         </div>
     </section>
