@@ -93,7 +93,7 @@ footer{
     font-weight: 600;
     margin: 0 auto;
     width: 590px;
-    height: 590px;
+    height: 620px;
     padding: 5px;
 }
 
@@ -447,6 +447,8 @@ a:hover, a:active{
     width: 1116px;
     display: flex;
     justify-content: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: max(1116px / 2, 50%);
     transform: translateX(-50%);
 }
@@ -509,7 +511,7 @@ a:hover, a:active{
 
 .loginForm {
     position: relative;
-    width: 22%;
+    width: 28%;
     margin: 0 auto;
     font-size: 25px;
     border-top: 2px solid gray;

@@ -1,1 +1,1 @@
-<link rel="icon" href="/ODW/ODW-Private/logo/logo-02.jpg" type="image/x-icon">
+<link rel="icon" href="/ODW/ODW-Private/logo/logo-06.png" type="image/x-icon">
